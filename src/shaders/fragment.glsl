@@ -1,11 +1,12 @@
 #version 330 core
 out vec4 FragColor; // 输出颜色
 
+in vec2 tex;// 纹理坐标
 in vec3 l;	// 光源向量 
 in vec3 n;	// 法向量
 in vec3 v;	// 视线方向
 
-uniform vec3 objectColor;	// 物体颜色
+uniform sampler2D texture_image;	// 纹理贴图
 
 void main()
 {
@@ -15,9 +16,9 @@ void main()
 	Ld = vec3(1.0f, 1.0f, 1.0f);
 	Ls = vec3(1.0f, 1.0f, 1.0f);
 	// 各反射系数
-	float Ka = 0.2f, Kd = 0.2f, Ks = 16.0f;
+	float Ka = 0.4f, Kd = 0.4f, Ks = 2.0f;
 	// 高光系数
-	float shininess = 5.0f;
+	float shininess = 16.0f;
 
 	// 计算环境光分量
 	vec3 Ia = Ka * La;
@@ -28,6 +29,7 @@ void main()
 	vec3 Is = Ks * Ls * pow(max(dot(r, v), 0.0f), shininess);
 
     // 最终颜色
+	vec3 objectColor = texture(texture_image, tex).rgb;
     vec3 result = (Ia + Id + Is) * objectColor;
     FragColor = vec4(result, 1.0);
 }

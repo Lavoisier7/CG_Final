@@ -43,16 +43,13 @@ protected:
     void mousePressEvent(QMouseEvent* event);
 
 private:
-    Model objModel;
     Camera camera;
     QPoint lastMousePos;
     int WindowSizeW;
     int WindowSizeH;
-
-    QOpenGLShaderProgram shaderProgram;
-    QOpenGLBuffer VBO;
-    QOpenGLVertexArrayObject VAO;
-
+    
+    // 场景内的模型
+    Model teapot;
 };
 
 #endif // MYGLWIDGET_H

@@ -34,6 +34,7 @@ private:
 
     float yaw;           // 偏航角
     float pitch;         // 俯仰角
+    float speed;         // 移动速度
 
     QMatrix4x4 viewMatrix;       // 视图矩阵
     QMatrix4x4 projectionMatrix; // 投影矩阵

@@ -6,7 +6,8 @@ Camera::Camera()
     up(0.0f, 1.0f, 0.0f),        // 初始上方方向
     worldUp(0.0f, 1.0f, 0.0f),   // 世界坐标系的上方方向
     yaw(-90.0f),                 // 初始偏航角
-    pitch(0.0f)                  // 初始俯仰角
+    pitch(0.0f),                 // 初始俯仰角
+    speed(1.5f)                  // 初始移动速度
 {
     right = QVector3D::crossProduct(front, worldUp).normalized();
     updateViewMatrix();
@@ -18,32 +19,32 @@ void Camera::setPerspective(float fov, float aspectRatio, float nearPlane, float
 }
 
 void Camera::moveForward() {
-    position += front; // 向前移动
+    position += front * speed;
     updateViewMatrix();
 }
 
 void Camera::moveBackward() {
-    position -= front; // 向后移动
+    position -= front * speed;
     updateViewMatrix();
 }
 
 void Camera::moveLeft() {
-    position -= right; // 向左移动
+    position -= right * speed;
     updateViewMatrix();
 }
 
 void Camera::moveRight() {
-    position += right; // 向右移动
+    position += right * speed;
     updateViewMatrix();
 }
 
 void Camera::moveUp() {
-    position += up;
+    position += up * speed;
     updateViewMatrix();
 }
 
 void Camera::moveDown() {
-    position -= up;
+    position -= up * speed;
     updateViewMatrix();
 }
 

@@ -1,7 +1,9 @@
 #version 330 core
 in vec3 pos;       // 顶点位置
 in vec3 normal;    // 顶点法线
+in vec2 inTex;     // 纹理坐标
 
+out vec2 tex;   // 纹理坐标
 out vec3 l;	// 光源向量 
 out vec3 n;	// 法向量
 out vec3 v;	// 视线方向
@@ -23,4 +25,5 @@ void main()
     mat3 normalMatrix = mat3(viewMatrix);
     n = normalize(normalMatrix * normal);
     v = normalize(vec3(vec4(camPosition,1.0) - pos_mv));
+    tex = inTex;
 }
