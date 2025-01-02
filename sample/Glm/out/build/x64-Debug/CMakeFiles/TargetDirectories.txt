@@ -1,3 +1,0 @@
-J:/computer science/Computer Graphics/final/CG_Final/sample/Glm/out/build/x64-Debug/CMakeFiles/glm.dir
-J:/computer science/Computer Graphics/final/CG_Final/sample/Glm/out/build/x64-Debug/CMakeFiles/edit_cache.dir
-J:/computer science/Computer Graphics/final/CG_Final/sample/Glm/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir

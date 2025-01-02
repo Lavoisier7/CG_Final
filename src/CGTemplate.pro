@@ -7,9 +7,7 @@ CONFIG += console qt c++11
 DEFINES += QT_DEPRECATED_WARNINGS
 INCLUDEPATH += "./glm"
 
-INCLUDEPATH += "D:\OpenGL\glew-2.1.0\include"
-
-
+INCLUDEPATH += "K:\software\glew-2.1.0\include"
 
 LIBS += \
 	Glu32.lib \
@@ -18,7 +16,7 @@ LIBS += \
 SOURCES += \
     main.cpp \
     myglwidget.cpp \
-    utils.cpp
+    camera.cpp
 
 HEADERS += \
     myglwidget.h  \
