@@ -1,0 +1,45 @@
+﻿  FBO.cpp
+  main.cpp
+C:\Users\admin\Desktop\IndoorDecoration (2)\Param.h(2,1): warning C4005: “NDEBUG”: 宏重定义
+C:\Users\admin\Desktop\IndoorDecoration (2)\main.cpp : message : 参见“NDEBUG”的前一个定义
+C:\Users\admin\Desktop\IndoorDecoration (2)\main.cpp(141,34): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+C:\Users\admin\Desktop\IndoorDecoration (2)\main.cpp(147,44): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+C:\Users\admin\Desktop\IndoorDecoration (2)\main.cpp(162,26): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+C:\Users\admin\Desktop\IndoorDecoration (2)\main.cpp(178,28): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+C:\Users\admin\Desktop\IndoorDecoration (2)\main.cpp(225,39): warning C4244: “=”: 从“GLint”转换到“GLfloat”，可能丢失数据
+C:\Users\admin\Desktop\IndoorDecoration (2)\main.cpp(523,14): warning C4244: “参数”: 从“GLfloat”转换到“GLint”，可能丢失数据
+  misc.cpp
+  model.cpp
+C:\Users\admin\Desktop\IndoorDecoration (2)\model.cpp(118,26): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+C:\Users\admin\Desktop\IndoorDecoration (2)\model.cpp(126,39): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+  正在生成代码...
+FBO.obj : error LNK2001: 无法解析的外部符号 __imp___glewDrawBuffers
+FBO.obj : error LNK2001: 无法解析的外部符号 __imp___glewBindFramebuffer
+FBO.obj : error LNK2001: 无法解析的外部符号 __imp___glewFramebufferTexture2D
+FBO.obj : error LNK2001: 无法解析的外部符号 __imp___glewGenFramebuffers
+main.obj : error LNK2001: 无法解析的外部符号 __imp_glewInit
+main.obj : error LNK2001: 无法解析的外部符号 __imp___glewBindBuffer
+misc.obj : error LNK2001: 无法解析的外部符号 __imp___glewBindBuffer
+main.obj : error LNK2001: 无法解析的外部符号 __imp___glewEnableVertexAttribArray
+main.obj : error LNK2001: 无法解析的外部符号 __imp___glewGetUniformLocation
+main.obj : error LNK2001: 无法解析的外部符号 __imp___glewUniform1f
+main.obj : error LNK2001: 无法解析的外部符号 __imp___glewUniform1i
+main.obj : error LNK2001: 无法解析的外部符号 __imp___glewUniform3fv
+main.obj : error LNK2001: 无法解析的外部符号 __imp___glewUniformMatrix4fv
+main.obj : error LNK2001: 无法解析的外部符号 __imp___glewUseProgram
+main.obj : error LNK2001: 无法解析的外部符号 __imp___glewVertexAttribPointer
+main.obj : error LNK2001: 无法解析的外部符号 __imp___glewBindTextureUnit
+misc.obj : error LNK2001: 无法解析的外部符号 SOIL_load_OGL_texture
+misc.obj : error LNK2001: 无法解析的外部符号 __imp___glewBufferData
+misc.obj : error LNK2001: 无法解析的外部符号 __imp___glewGenBuffers
+misc.obj : error LNK2001: 无法解析的外部符号 __imp___glewAttachShader
+misc.obj : error LNK2001: 无法解析的外部符号 __imp___glewCompileShader
+misc.obj : error LNK2001: 无法解析的外部符号 __imp___glewCreateProgram
+misc.obj : error LNK2001: 无法解析的外部符号 __imp___glewCreateShader
+misc.obj : error LNK2001: 无法解析的外部符号 __imp___glewDeleteShader
+misc.obj : error LNK2001: 无法解析的外部符号 __imp___glewDetachShader
+misc.obj : error LNK2001: 无法解析的外部符号 __imp___glewGetShaderInfoLog
+misc.obj : error LNK2001: 无法解析的外部符号 __imp___glewGetShaderiv
+misc.obj : error LNK2001: 无法解析的外部符号 __imp___glewLinkProgram
+misc.obj : error LNK2001: 无法解析的外部符号 __imp___glewShaderSource
+C:\Users\admin\Desktop\IndoorDecoration (2)\x64\Release\房间.exe : fatal error LNK1120: 28 个无法解析的外部命令

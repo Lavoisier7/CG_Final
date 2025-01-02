@@ -1,0 +1,135 @@
+﻿  FBO.cpp
+  main.cpp
+C:\Users\admin\Desktop\Graphic\IndoorDecoration (2)\main.cpp(225,39): warning C4244: “=”: 从“GLint”转换到“GLfloat”，可能丢失数据
+C:\Users\admin\Desktop\Graphic\IndoorDecoration (2)\main.cpp(523,14): warning C4244: “参数”: 从“GLfloat”转换到“GLint”，可能丢失数据
+  misc.cpp
+  model.cpp
+  正在生成代码...
+  soil.lib(SOIL2.obj) : 找到 MSIL .netmodule 或使用 /GL 编译的模块；正在使用 /LTCG 重新启动链接；将 /LTCG 添加到链接命令行以改进链接器性能
+LINK : warning LNK4075: 忽略“/INCREMENTAL”(由于“/LTCG”规范)
+FBO.obj : error LNK2001: 无法解析的外部符号 "void * __cdecl operator new(unsigned int)" (??2@YAPAXI@Z)
+main.obj : error LNK2001: 无法解析的外部符号 "void * __cdecl operator new(unsigned int)" (??2@YAPAXI@Z)
+model.obj : error LNK2001: 无法解析的外部符号 "void * __cdecl operator new(unsigned int)" (??2@YAPAXI@Z)
+FBO.obj : error LNK2001: 无法解析的外部符号 "void __cdecl operator delete(void *,unsigned int)" (??3@YAXPAXI@Z)
+main.obj : error LNK2001: 无法解析的外部符号 "void __cdecl operator delete(void *,unsigned int)" (??3@YAXPAXI@Z)
+model.obj : error LNK2001: 无法解析的外部符号 "void __cdecl operator delete(void *,unsigned int)" (??3@YAXPAXI@Z)
+FBO.obj : error LNK2001: 无法解析的外部符号 "void * __cdecl operator new[](unsigned int)" (??_U@YAPAXI@Z)
+misc.obj : error LNK2001: 无法解析的外部符号 "void * __cdecl operator new[](unsigned int)" (??_U@YAPAXI@Z)
+model.obj : error LNK2001: 无法解析的外部符号 "void * __cdecl operator new[](unsigned int)" (??_U@YAPAXI@Z)
+FBO.obj : error LNK2001: 无法解析的外部符号 __imp___invalid_parameter
+main.obj : error LNK2001: 无法解析的外部符号 __imp___invalid_parameter
+model.obj : error LNK2001: 无法解析的外部符号 __imp___invalid_parameter
+FBO.obj : error LNK2001: 无法解析的外部符号 __imp___CrtDbgReport
+main.obj : error LNK2001: 无法解析的外部符号 __imp___CrtDbgReport
+model.obj : error LNK2001: 无法解析的外部符号 __imp___CrtDbgReport
+FBO.obj : error LNK2001: 无法解析的外部符号 _memcmp
+FBO.obj : error LNK2001: 无法解析的外部符号 _memcpy
+model.obj : error LNK2001: 无法解析的外部符号 _memcpy
+FBO.obj : error LNK2001: 无法解析的外部符号 _memmove
+main.obj : error LNK2001: 无法解析的外部符号 _memmove
+model.obj : error LNK2001: 无法解析的外部符号 _memmove
+FBO.obj : error LNK2001: 无法解析的外部符号 ___std_exception_copy
+main.obj : error LNK2001: 无法解析的外部符号 ___std_exception_copy
+model.obj : error LNK2001: 无法解析的外部符号 ___std_exception_copy
+FBO.obj : error LNK2001: 无法解析的外部符号 ___std_exception_destroy
+main.obj : error LNK2001: 无法解析的外部符号 ___std_exception_destroy
+model.obj : error LNK2001: 无法解析的外部符号 ___std_exception_destroy
+FBO.obj : error LNK2001: 无法解析的外部符号 _strlen
+model.obj : error LNK2001: 无法解析的外部符号 _strlen
+FBO.obj : error LNK2001: 无法解析的外部符号 @_RTC_CheckStackVars@8
+main.obj : error LNK2001: 无法解析的外部符号 @_RTC_CheckStackVars@8
+misc.obj : error LNK2001: 无法解析的外部符号 @_RTC_CheckStackVars@8
+model.obj : error LNK2001: 无法解析的外部符号 @_RTC_CheckStackVars@8
+msvcprtd.lib(locale0_implib.obj) : error LNK2001: 无法解析的外部符号 @__security_check_cookie@4
+soil.lib(SOIL2.obj) : error LNK2001: 无法解析的外部符号 @__security_check_cookie@4
+FBO.obj : error LNK2001: 无法解析的外部符号 @__security_check_cookie@4
+main.obj : error LNK2001: 无法解析的外部符号 @__security_check_cookie@4
+misc.obj : error LNK2001: 无法解析的外部符号 @__security_check_cookie@4
+model.obj : error LNK2001: 无法解析的外部符号 @__security_check_cookie@4
+FBO.obj : error LNK2001: 无法解析的外部符号 __CxxThrowException@8
+main.obj : error LNK2001: 无法解析的外部符号 __CxxThrowException@8
+model.obj : error LNK2001: 无法解析的外部符号 __CxxThrowException@8
+FBO.obj : error LNK2001: 无法解析的外部符号 __RTC_CheckEsp
+main.obj : error LNK2001: 无法解析的外部符号 __RTC_CheckEsp
+misc.obj : error LNK2001: 无法解析的外部符号 __RTC_CheckEsp
+model.obj : error LNK2001: 无法解析的外部符号 __RTC_CheckEsp
+FBO.obj : error LNK2001: 无法解析的外部符号 __RTC_InitBase
+main.obj : error LNK2001: 无法解析的外部符号 __RTC_InitBase
+misc.obj : error LNK2001: 无法解析的外部符号 __RTC_InitBase
+model.obj : error LNK2001: 无法解析的外部符号 __RTC_InitBase
+FBO.obj : error LNK2001: 无法解析的外部符号 __RTC_Shutdown
+main.obj : error LNK2001: 无法解析的外部符号 __RTC_Shutdown
+misc.obj : error LNK2001: 无法解析的外部符号 __RTC_Shutdown
+model.obj : error LNK2001: 无法解析的外部符号 __RTC_Shutdown
+FBO.obj : error LNK2001: 无法解析的外部符号 ___CxxFrameHandler3
+main.obj : error LNK2001: 无法解析的外部符号 ___CxxFrameHandler3
+model.obj : error LNK2001: 无法解析的外部符号 ___CxxFrameHandler3
+msvcprtd.lib(locale0_implib.obj) : error LNK2001: 无法解析的外部符号 ___CxxFrameHandler3
+FBO.obj : error LNK2001: 无法解析的外部符号 _memset
+main.obj : error LNK2001: 无法解析的外部符号 _memset
+model.obj : error LNK2001: 无法解析的外部符号 _memset
+model.obj : error LNK2001: 无法解析的外部符号 _memset
+FBO.obj : error LNK2001: 无法解析的外部符号 "const type_info::`vftable'" (??_7type_info@@6B@)
+main.obj : error LNK2001: 无法解析的外部符号 "const type_info::`vftable'" (??_7type_info@@6B@)
+model.obj : error LNK2001: 无法解析的外部符号 "const type_info::`vftable'" (??_7type_info@@6B@)
+msvcprtd.lib(locale0_implib.obj) : error LNK2001: 无法解析的外部符号 ___security_cookie
+FBO.obj : error LNK2001: 无法解析的外部符号 ___security_cookie
+main.obj : error LNK2001: 无法解析的外部符号 ___security_cookie
+misc.obj : error LNK2001: 无法解析的外部符号 ___security_cookie
+model.obj : error LNK2001: 无法解析的外部符号 ___security_cookie
+main.obj : error LNK2001: 无法解析的外部符号 _atexit
+msvcprtd.lib(locale0_implib.obj) : error LNK2001: 无法解析的外部符号 _atexit
+main.obj : error LNK2001: 无法解析的外部符号 _cos
+    已定义且可能匹配的符号上的提示:
+      "float __cdecl cos(float)" (?cos@@YAMM@Z)
+main.obj : error LNK2001: 无法解析的外部符号 _sin
+    已定义且可能匹配的符号上的提示:
+      "float __cdecl sin(float)" (?sin@@YAMM@Z)
+main.obj : error LNK2001: 无法解析的外部符号 _sqrt
+    已定义且可能匹配的符号上的提示:
+      "float __cdecl sqrt(float)" (?sqrt@@YAMM@Z)
+main.obj : error LNK2001: 无法解析的外部符号 _tan
+    已定义且可能匹配的符号上的提示:
+      "float __cdecl tan(float)" (?tan@@YAMM@Z)
+main.obj : error LNK2001: 无法解析的外部符号 __imp__exit
+main.obj : error LNK2001: 无法解析的外部符号 __imp____acrt_iob_func
+misc.obj : error LNK2001: 无法解析的外部符号 __imp____acrt_iob_func
+main.obj : error LNK2001: 无法解析的外部符号 __imp____stdio_common_vfprintf
+misc.obj : error LNK2001: 无法解析的外部符号 __imp____stdio_common_vfprintf
+main.obj : error LNK2001: 无法解析的外部符号 __fltused
+misc.obj : error LNK2001: 无法解析的外部符号 __imp__fclose
+soil.lib(SOIL2.obj) : error LNK2001: 无法解析的外部符号 __imp__fclose
+misc.obj : error LNK2001: 无法解析的外部符号 __imp__fopen
+soil.lib(SOIL2.obj) : error LNK2001: 无法解析的外部符号 __imp__fopen
+misc.obj : error LNK2001: 无法解析的外部符号 __imp__fread
+soil.lib(SOIL2.obj) : error LNK2001: 无法解析的外部符号 __imp__fread
+misc.obj : error LNK2001: 无法解析的外部符号 __imp__fseek
+soil.lib(SOIL2.obj) : error LNK2001: 无法解析的外部符号 __imp__fseek
+misc.obj : error LNK2001: 无法解析的外部符号 __imp__ftell
+soil.lib(SOIL2.obj) : error LNK2001: 无法解析的外部符号 __imp__ftell
+misc.obj : error LNK2001: 无法解析的外部符号 __imp__rewind
+misc.obj : error LNK2001: 无法解析的外部符号 __imp__free
+soil.lib(SOIL2.obj) : error LNK2001: 无法解析的外部符号 __imp__free
+misc.obj : error LNK2001: 无法解析的外部符号 __imp__malloc
+soil.lib(SOIL2.obj) : error LNK2001: 无法解析的外部符号 __imp__malloc
+model.obj : error LNK2001: 无法解析的外部符号 _memchr
+model.obj : error LNK2001: 无法解析的外部符号 __imp__atoi
+soil.lib(SOIL2.obj) : error LNK2001: 无法解析的外部符号 __imp__atoi
+LINK : error LNK2001: 无法解析的外部符号 _mainCRTStartup
+msvcprtd.lib(locale0_implib.obj) : error LNK2001: 无法解析的外部符号 __imp___free_dbg
+msvcprtd.lib(locale0_implib.obj) : error LNK2001: 无法解析的外部符号 __imp___malloc_dbg
+msvcprtd.lib(locale0_implib.obj) : error LNK2001: 无法解析的外部符号 ___guard_check_icall_fptr
+soil.lib(SOIL2.obj) : error LNK2001: 无法解析的外部符号 ___report_rangecheckfailure
+soil.lib(SOIL2.obj) : error LNK2001: 无法解析的外部符号 __imp__realloc
+soil.lib(SOIL2.obj) : error LNK2001: 无法解析的外部符号 __imp__putc
+soil.lib(SOIL2.obj) : error LNK2001: 无法解析的外部符号 __imp__strncmp
+soil.lib(SOIL2.obj) : error LNK2001: 无法解析的外部符号 __imp__fwrite
+soil.lib(SOIL2.obj) : error LNK2001: 无法解析的外部符号 __imp__fopen_s
+soil.lib(SOIL2.obj) : error LNK2001: 无法解析的外部符号 __imp____stdio_common_vsprintf
+soil.lib(SOIL2.obj) : error LNK2001: 无法解析的外部符号 __imp__strtol
+soil.lib(SOIL2.obj) : error LNK2001: 无法解析的外部符号 __imp__ldexp
+soil.lib(SOIL2.obj) : error LNK2001: 无法解析的外部符号 __imp__frexp
+soil.lib(SOIL2.obj) : error LNK2001: 无法解析的外部符号 __imp__feof
+soil.lib(SOIL2.obj) : error LNK2001: 无法解析的外部符号 _strstr
+soil.lib(SOIL2.obj) : error LNK2001: 无法解析的外部符号 _strchr
+C:\Users\admin\Desktop\Graphic\IndoorDecoration (2)\Debug\房间.exe : fatal error LNK1120: 57 个无法解析的外部命令

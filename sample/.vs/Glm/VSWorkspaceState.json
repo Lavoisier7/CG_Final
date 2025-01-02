@@ -1,0 +1,8 @@
+{
+  "OutputFoldersPerTargetSystem": {
+    "Local Machine": [
+      "Glm\\out\\build\\x64-Debug",
+      "Glm\\out\\install\\x64-Debug"
+    ]
+  }
+}

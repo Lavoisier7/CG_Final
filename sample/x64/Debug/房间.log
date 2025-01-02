@@ -1,0 +1,37 @@
+﻿  FBO.cpp
+  main.cpp
+  misc.cpp
+  model.cpp
+C:\Users\admin\Desktop\IndoorDecoration (2)\model.cpp(104,26): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+C:\Users\admin\Desktop\IndoorDecoration (2)\model.cpp(111,39): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+  正在生成代码...
+FBO.obj : error LNK2019: 无法解析的外部符号 __imp___glewDrawBuffers，函数 "public: void __cdecl FrameBufferObject::Finish(void)" (?Finish@FrameBufferObject@@QEAAXXZ) 中引用了该符号
+FBO.obj : error LNK2019: 无法解析的外部符号 __imp___glewBindFramebuffer，函数 "public: void __cdecl FrameBufferObject::AttachColorBuffer(char const *,unsigned int,int,int)" (?AttachColorBuffer@FrameBufferObject@@QEAAXPEBDIHH@Z) 中引用了该符号
+FBO.obj : error LNK2019: 无法解析的外部符号 __imp___glewFramebufferTexture2D，函数 "public: void __cdecl FrameBufferObject::AttachColorBuffer(char const *,unsigned int,int,int)" (?AttachColorBuffer@FrameBufferObject@@QEAAXPEBDIHH@Z) 中引用了该符号
+FBO.obj : error LNK2019: 无法解析的外部符号 __imp___glewGenFramebuffers，函数 "public: __cdecl FrameBufferObject::FrameBufferObject(void)" (??0FrameBufferObject@@QEAA@XZ) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 __imp_glewInit，函数 main 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 __imp___glewBindBuffer，函数 "void __cdecl drawOne(unsigned int,unsigned int,int)" (?drawOne@@YAXIIH@Z) 中引用了该符号
+misc.obj : error LNK2001: 无法解析的外部符号 __imp___glewBindBuffer
+main.obj : error LNK2019: 无法解析的外部符号 __imp___glewEnableVertexAttribArray，函数 "void __cdecl DrawRoom(void)" (?DrawRoom@@YAXXZ) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 __imp___glewGetUniformLocation，函数 "void __cdecl init(void)" (?init@@YAXXZ) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 __imp___glewUniform1i，函数 "void __cdecl DrawRoom(void)" (?DrawRoom@@YAXXZ) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 __imp___glewUniform3fv，函数 "void __cdecl DrawRoom(void)" (?DrawRoom@@YAXXZ) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 __imp___glewUniformMatrix4fv，函数 "void __cdecl DrawRoom(void)" (?DrawRoom@@YAXXZ) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 __imp___glewUseProgram，函数 "void __cdecl DrawRoom(void)" (?DrawRoom@@YAXXZ) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 __imp___glewVertexAttribPointer，函数 "void __cdecl drawOne(unsigned int,unsigned int,int)" (?drawOne@@YAXIIH@Z) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 __imp___glewBindTextureUnit，函数 "void __cdecl DrawRoom(void)" (?DrawRoom@@YAXXZ) 中引用了该符号
+misc.obj : error LNK2019: 无法解析的外部符号 SOIL_load_OGL_texture，函数 "unsigned int __cdecl CreateTexture(char const *)" (?CreateTexture@@YAIPEBD@Z) 中引用了该符号
+misc.obj : error LNK2019: 无法解析的外部符号 __imp___glewBufferData，函数 "unsigned int __cdecl CreateBufferObject(unsigned int,__int64,unsigned int,void *)" (?CreateBufferObject@@YAII_JIPEAX@Z) 中引用了该符号
+misc.obj : error LNK2019: 无法解析的外部符号 __imp___glewGenBuffers，函数 "unsigned int __cdecl CreateBufferObject(unsigned int,__int64,unsigned int,void *)" (?CreateBufferObject@@YAII_JIPEAX@Z) 中引用了该符号
+misc.obj : error LNK2019: 无法解析的外部符号 __imp___glewAttachShader，函数 "unsigned int __cdecl CreateGPUProgram(char const *,char const *)" (?CreateGPUProgram@@YAIPEBD0@Z) 中引用了该符号
+misc.obj : error LNK2019: 无法解析的外部符号 __imp___glewCompileShader，函数 "unsigned int __cdecl CreateGPUProgram(char const *,char const *)" (?CreateGPUProgram@@YAIPEBD0@Z) 中引用了该符号
+misc.obj : error LNK2019: 无法解析的外部符号 __imp___glewCreateProgram，函数 "unsigned int __cdecl CreateGPUProgram(char const *,char const *)" (?CreateGPUProgram@@YAIPEBD0@Z) 中引用了该符号
+misc.obj : error LNK2019: 无法解析的外部符号 __imp___glewCreateShader，函数 "unsigned int __cdecl CreateGPUProgram(char const *,char const *)" (?CreateGPUProgram@@YAIPEBD0@Z) 中引用了该符号
+misc.obj : error LNK2019: 无法解析的外部符号 __imp___glewDeleteShader，函数 "unsigned int __cdecl CreateGPUProgram(char const *,char const *)" (?CreateGPUProgram@@YAIPEBD0@Z) 中引用了该符号
+misc.obj : error LNK2019: 无法解析的外部符号 __imp___glewDetachShader，函数 "unsigned int __cdecl CreateGPUProgram(char const *,char const *)" (?CreateGPUProgram@@YAIPEBD0@Z) 中引用了该符号
+misc.obj : error LNK2019: 无法解析的外部符号 __imp___glewGetShaderInfoLog，函数 "void __cdecl printShaderInfoLog(unsigned int)" (?printShaderInfoLog@@YAXI@Z) 中引用了该符号
+misc.obj : error LNK2019: 无法解析的外部符号 __imp___glewGetShaderiv，函数 "void __cdecl printShaderInfoLog(unsigned int)" (?printShaderInfoLog@@YAXI@Z) 中引用了该符号
+misc.obj : error LNK2019: 无法解析的外部符号 __imp___glewLinkProgram，函数 "unsigned int __cdecl CreateGPUProgram(char const *,char const *)" (?CreateGPUProgram@@YAIPEBD0@Z) 中引用了该符号
+misc.obj : error LNK2019: 无法解析的外部符号 __imp___glewShaderSource，函数 "unsigned int __cdecl CreateGPUProgram(char const *,char const *)" (?CreateGPUProgram@@YAIPEBD0@Z) 中引用了该符号
+glew32.lib : warning LNK4272: 库计算机类型“x86”与目标计算机类型“x64”冲突
+C:\Users\admin\Desktop\IndoorDecoration (2)\x64\Debug\房间.exe : fatal error LNK1120: 27 个无法解析的外部命令

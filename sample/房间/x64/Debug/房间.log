@@ -1,0 +1,4 @@
+﻿  main.cpp
+J:\computer science\Computer Graphics\final\CG_Final\sample\Param.h(3,9): error C1083: 无法打开包括文件: “GL/freeglut.h”: No such file or directory
+  (编译源文件“main.cpp”)
+  
