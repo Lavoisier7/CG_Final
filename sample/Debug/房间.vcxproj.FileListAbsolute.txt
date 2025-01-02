@@ -1,4 +1,0 @@
-D:\vs2019\opengl\IndoorDecoration\Debug\房间.exe
-D:\vs2019\opengl\IndoorDecoration\Debug\房间.pdb
-C:\Users\admin\Desktop\IndoorDecoration (2)\Debug\房间.exe
-C:\Users\admin\Desktop\IndoorDecoration (2)\Debug\房间.pdb
