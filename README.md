@@ -9,3 +9,12 @@
 
 - 新增了文件夹resources，内有若干模型和贴图可参考
 - 新增文件夹sample，[b站室内装潢模拟](https://www.bilibili.com/video/BV13v4y1f7X4/?spm_id_from=333.337.search-card.all.click&vd_source=11fd0556160bb5cc3994fd10610c3d4d)的源码，需要预先配置freeglut环境
+
+### 2025/1/3 20：00
+
+- 更新src，删除无用文件夹
+- 新建文件夹report，内存小组实验报告
+- 待办：
+-   小组实验报告
+-   演示视频
+-   代码注释
