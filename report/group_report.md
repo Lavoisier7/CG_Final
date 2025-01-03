@@ -289,8 +289,11 @@
 
 - 可见下图：
 
+  ![image 1](img/1.png)
   
-
+  ![image 2](img/2.png)
+  
+  ![image 3](img/3.png)
 
 4.2 **结果分析**  
 
