@@ -164,7 +164,109 @@
 
     其中，`gamma` 通常取值为 `2.2`。
 
-  - 介绍阴影映射技术的具体实现步骤。  
+  - 实现基于法线和光照方向的简单阴影模拟
+  
+    在不使用复杂的渲染管线（如阴影贴图或阴影体积）的情况下，通过修改片段着色器，可以模拟出一种简化的阴影效果。以下是实现的详细描述及相关计算公式。
+  
+    **实现原理**
+  
+    1. **法线与光照方向的点积**：  
+       点积的结果反映了光线与表面方向的关系：
+       
+       - 值越接近 `1.0`，说明表面正对光源，亮度越高。
+       - 值越接近 `0.0` 或负值，说明表面逐渐背向光源，亮度越低。
+       
+       **公式**：`shadowFactor = max(dot(n, l), 0.0)`
+       
+       其中 `n` 是表面的单位法向量，`l` 是光照方向的单位向量。
+       
+    2. **模拟阴影区域**：  
+       当点积结果较小时，进一步降低光照强度，使表面看起来更暗，从而模拟阴影效果。
+  
+    3. **光照模型**：  
+       使用经典的 Blinn-Phong 光照模型，包括环境光、漫反射光和镜面反射光的计算，同时将阴影因子应用于漫反射光和镜面反射光。
+  
+    **着色器的调整**
+  
+    **1. 法线与光照方向的单位化**
+  
+    在光照计算中，法线和光照方向的单位化非常重要，以确保点积计算正确：
+  
+    ```glsl
+    vec3 normalizedN = normalize(n); // 单位化法线
+    vec3 normalizedL = normalize(l); // 单位化光照方向
+    ```
+  
+    **2. 阴影因子的计算**
+  
+    使用法线和光照方向的点积计算阴影因子 `shadowFactor`：
+  
+    ```glsl
+    float shadowFactor = max(dot(normalizedN, normalizedL), 0.0);
+    ```
+  
+    - 当表面背向光源时，点积会小于 `0`，通过 `max` 函数将其限制为 `0.0`，避免负值影响计算。
+  
+    进一步调整，模拟更深的阴影效果：
+  
+    ```glsl
+    if(shadowFactor < 0.3) {
+        shadowFactor *= 0.3; // 减少光照强度
+    }
+    ```
+  
+    - 当点积值小于 `0.3` 时，人为降低光照强度，使表面看起来更暗。
+  
+    **3. 光照计算**
+  
+    根据 Blinn-Phong 模型，计算总光照：
+  
+    - **环境光**：
+      ```glsl
+      vec3 Ia = Ka * La; // 环境光分量
+      ```
+  
+    - **漫反射光**：
+      
+      ```glsl
+      float diff = max(dot(normalizedL, normalizedN), 0.0);
+      diff = pow(diff, 1.5); // 提升亮部和暗部的对比
+      vec3 Id = Kd * Ld * diff;
+      ```
+      
+      使用 `pow` 函数提升漫反射的非线性对比度，增加亮部和暗部的视觉差异。
+      
+    - **镜面反射光**（Blinn-Phong 模型）：
+      
+      ```glsl
+      vec3 halfwayDir = normalize(normalizedL + normalizedV);
+      float spec = pow(max(dot(normalizedN, halfwayDir), 0.0), shininess);
+      spec = spec * (0.5 + 0.5 * pow(diff, 2.0)); // 结合漫反射
+      vec3 Is = Ks * Ls * spec;
+      ```
+      
+      镜面反射光通过调整高光强度和锐度，结合漫反射的分布，使高光更自然。
+  
+    **4. 阴影因子的应用**
+  
+    将阴影因子 `shadowFactor` 作用于漫反射光和镜面反射光：
+  
+    ```glsl
+    vec3 lighting = (Ia + (Id + Is) * shadowFactor) * attenuation;
+    ```
+  
+    - 环境光 `Ia` 不受阴影影响，保持整体场景的柔和光照。
+    - 漫反射光 `Id` 和镜面反射光 `Is` 乘以阴影因子 `shadowFactor`，模拟阴影效果。
+  
+    **5. 伽马校正**
+  
+    最终对输出颜色进行伽马校正，使得颜色在显示器上更自然：
+  
+    ```glsl
+    vec3 finalColor = lighting * objectColor;
+    finalColor = pow(finalColor, vec3(1.0 / 2.2)); // 伽马校正
+    FragColor = vec4(finalColor, 1.0);
+    ``` 
 
 - **用户交互**：  
 
