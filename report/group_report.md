@@ -268,4 +268,4 @@ IndoorSceneSimulator/
 └── README.md
 ```
 
-- 相关算法：详细描述涉及的光照模型、阴影映射等算法。  
+- 演示视频：见附件。
